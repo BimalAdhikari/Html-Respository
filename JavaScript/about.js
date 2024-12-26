@@ -28,7 +28,7 @@ const friendsSection = document.querySelector('.friends-section');
 // Voor elke vriend in de array, maak een kaart en voeg deze toe aan de sectie
 friends.forEach(friend => {
   // Maak een div-element voor de vriend-kaart
-  const card = document.createElement('div');
+  const card = document.createElement('section');
   card.className = 'friend-card';
 
   // Maak een img-element voor de afbeelding van de vriend

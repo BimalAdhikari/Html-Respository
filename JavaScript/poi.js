@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Voor elke POI in de array
   pois.forEach((poi) => {
     // Maak een div element voor de POI
-    const poiDiv = document.createElement("div");
-    poiDiv.classList.add("poi");
+    const poiSection = document.createElement("section");
+    poiSection.classList.add("poi");
 
     // Maak een h2 element voor de naam van de POI
     const poiTitle = document.createElement("h2");
@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
     poiDescription.textContent = poi.description;
 
     // Voeg de titel, afbeelding en beschrijving toe aan de POI div
-    poiDiv.appendChild(poiTitle);
-    poiDiv.appendChild(poiImg);
-    poiDiv.appendChild(poiDescription);
+    poiSection.appendChild(poiTitle);
+    poiSection.appendChild(poiImg);
+    poiSection.appendChild(poiDescription);
 
     // Voeg de POI div toe aan de container
-    container.appendChild(poiDiv);
+    container.appendChild(poiSection);
   });
 });
