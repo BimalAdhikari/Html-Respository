@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+ 
   background-color: #f4f4f4;
 }
 
@@ -12,23 +11,22 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-}
+
 
 nav ul {
   list-style: none;
-  padding: 0;
+ 
 }
 
 nav ul li {
   display: inline;
-  margin: 0 1rem;
+
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  padding: 10px;
 }
 
 main {
