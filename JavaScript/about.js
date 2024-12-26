@@ -25,30 +25,19 @@ const friends = [
 // Selecteer de sectie waar de vriendenkaarten zullen worden toegevoegd
 const friendsSection = document.querySelector('.friends-section');
 
-// Voor elke vriend in de array, maak een kaart en voeg deze toe aan de sectie
-friends.forEach(friend => {
-  // Maak een div-element voor de vriend-kaart
+for(i = 0; i < friends.length; i++)  {
+  const currentFriend = friends[i];
   const card = document.createElement('section');
   card.className = 'friend-card';
-
-  // Maak een img-element voor de afbeelding van de vriend
   const img = document.createElement('img');
-  img.src = friend.image;
-  img.alt = friend.name;
-
-  // Maak een h3-element voor de naam van de vriend
+  img.src = currentFriend.image;
+  img.alt = currentFriend.name;
   const name = document.createElement('h3');
-  name.textContent = friend.name;
-
-  // Maak een p-element voor de beschrijving van de vriend
+  name.textContent = currentFriend.name;
   const description = document.createElement('p');
-  description.textContent = friend.description;
-
-  // Voeg de afbeelding, naam en beschrijving toe aan de vriend-kaart
+  description.textContent = currentFriend.description;
   card.appendChild(img);
   card.appendChild(name);
   card.appendChild(description);
-
-  // Voeg de vriend-kaart toe aan de vrienden-sectie
   friendsSection.appendChild(card);
-});
+  };
